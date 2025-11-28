@@ -1,5 +1,7 @@
 # first mini game
+![Image](https://github.com/user-attachments/assets/a5ac17a5-bad2-44e5-a970-cc541ae9371b)
 
+![Image](https://github.com/user-attachments/assets/a7dd4c9e-e217-47fe-bbde-0f324ba7efb5)
 
 
 - Developed by hiva dargazani
