@@ -3,6 +3,7 @@
 
 ![Image](https://github.com/user-attachments/assets/a7dd4c9e-e217-47fe-bbde-0f324ba7efb5)
 
+https://hivadi-dev.github.io/first-mini-game/
 
 - Developed by hiva dargazani
 
