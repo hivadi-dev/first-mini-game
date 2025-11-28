@@ -53,22 +53,22 @@ window.addEventListener('keydown', (e) => {
 })
 
 function moveleft() {
-    let x = box.computedStyleMap().get('left').value
+   let x = parseInt(getComputedStyle(box).left)
     if (x > 0) box.style.left = (x - 50) + 'px'
     checkHit()
 }
 function moveright() {
-    let x = box.computedStyleMap().get('left').value
+    let x = bparseInt(getComputedStyle(box).left)
     if (x < window.innerWidth - box.offsetWidth) box.style.left = (x + 50) + 'px'
     checkHit()
 }
 function moveup() {
-    let y = box.computedStyleMap().get('top').value
+    let y = parseInt(getComputedStyle(box).top)
     if (y > 0) box.style.top = (y - 50) + 'px'
     checkHit()
 }
 function movedown() {
-    let y = box.computedStyleMap().get('top').value
+    let y = parseInt(getComputedStyle(box).top)
     if (y < window.innerHeight - box.offsetHeight) box.style.top = (y + 50) + 'px'
     checkHit()
 }
@@ -139,3 +139,4 @@ function checkHit() {
     })
 }
 ///اتمام
+
