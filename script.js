@@ -59,7 +59,10 @@ function moveleft() {
 }
 function moveright() {
     let x = parseInt(getComputedStyle(box).left)
-    if (x < window.innerWidth - box.offsetWidth) box.style.left = (x + 50) + 'px'
+    let maxX = window.innerWidth - box.offsetWidth
+    let newX = x + 50
+    if (newX > maxX) newX = maxX
+    box.style.left = newX + 'px'
     checkHit()
 }
 function moveup() {
@@ -139,5 +142,6 @@ function checkHit() {
     })
 }
 ///اتمام
+
 
 
