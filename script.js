@@ -58,7 +58,7 @@ function moveleft() {
     checkHit()
 }
 function moveright() {
-    let x = bparseInt(getComputedStyle(box).left)
+    let x = parseInt(getComputedStyle(box).left)
     if (x < window.innerWidth - box.offsetWidth) box.style.left = (x + 50) + 'px'
     checkHit()
 }
@@ -139,4 +139,5 @@ function checkHit() {
     })
 }
 ///اتمام
+
 
