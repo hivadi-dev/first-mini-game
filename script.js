@@ -58,13 +58,15 @@ function moveleft() {
     checkHit()
 }
 function moveright() {
+    if (!box) return; // جلوگیری از خطا قبل از ساخت box
     let x = parseInt(getComputedStyle(box).left)
-    let maxX = window.innerWidth - box.offsetWidth
+    let maxX = window.innerWidth - box.offsetWidth - 2; // 2px حاشیه ایمنی
     let newX = x + 50
     if (newX > maxX) newX = maxX
     box.style.left = newX + 'px'
     checkHit()
 }
+
 function moveup() {
     let y = parseInt(getComputedStyle(box).top)
     if (y > 0) box.style.top = (y - 50) + 'px'
@@ -142,6 +144,7 @@ function checkHit() {
     })
 }
 ///اتمام
+
 
 
 
